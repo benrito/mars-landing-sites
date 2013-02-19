@@ -1,0 +1,41 @@
+#popcorn-background { 
+  position: absolute; 
+  width: 95%;
+  height: 45em;
+  margin: 2.5%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* Fun effects */
+
+.scale {
+  transform: scale(2,2);
+  -ms-transform: scale(2,2); /* IE 9 */
+  -webkit-transform: scale(2,2); /* Safari and Chrome */
+  -o-transform: scale(2,2); /* Opera */
+  -moz-transform: scale(2,2); /* Firefox */
+}
+.translate {
+  transform: translate(50px,100px);
+  -ms-transform: translate(50px,100px); /* IE 9 */
+  -webkit-transform: translate(50px,100px); /* Safari and Chrome */
+  -o-transform: translate(50px,100px); /* Opera */
+  -moz-transform: translate(50px,100px); /* Firefox */
+}
+.skew {
+  transform: skew(30deg,20deg);
+  -ms-transform: skew(30deg,20deg); /* IE 9 */
+  -webkit-transform: skew(30deg,20deg); /* Safari and Chrome */
+  -o-transform: skew(30deg,20deg); /* Opera */
+  -moz-transform: skew(30deg,20deg); /* Firefox */
+}
+.flip {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg); /* Safari and Chrome */
+  -moz-transform: rotateY(360deg); /* Firefox */
+}
+
+
