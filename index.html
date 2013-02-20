@@ -102,11 +102,9 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-      <video height="180" width="300" id="video" controls style="display: none;">
-      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
-      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
-      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
-    </video>
+      <audio height="180" width="300" id="video" controls style="">
+      <source src="narration.ogg">
+    </audio>
 
       </div>
 
@@ -128,24 +126,64 @@
     <script>
         document.addEventListener( "DOMContentLoaded", function() {
         var popcorn = Popcorn( "#video" ); 
+
+       // popcorn.image({
+       //  start: 0.1,
+       //  end: 9,
+       //  src: "http://www.pascallee.net/s/cc_images/cache_163452204.jpg?t=1348382265",
+       //  target: "popcorn-background",  // The id of our target DoM element
+       // });
+
+       // popcorn.image({
+       //  start: 10,
+       //  end: 45,
+       //  src: "http://solarsystem.nasa.gov/docs/Mars_Landing_Sites_1308x825.jpg",
+       // });
+
         popcorn.MARS({
-         start: 1, // Our start time in seconds
-         end: 10, // Our end time in seconds
+         start: 10, // Our start time in seconds
+         end: 21, // Our end time in seconds
          type: "G_MARS_VISIBLE_MAP", //
          target: "popcorn-background",  // The id of our target DoM element
          lat: 5.4,
          lng: 137.5,
          zoom: 2,
         });
+
         popcorn.MARS({
-         start: 10.1, // Our start time in seconds
-         end: 20, // Our end time in seconds
+         start: 22, // Our start time in seconds
+         end: 44, // Our end time in seconds
          type: "G_MARS_INFRARED_MAP", //
          target: "popcorn-background",  // The id of our target DoM element
          lat: 5.4,
          lng: 137.5,
          zoom: 2,
         });
+
+        popcorn.MARS({
+         start: 45, // Our start time in seconds
+         end: 76, // Our end time in seconds
+         type: "G_MARS_INFRARED_MAP", //
+         target: "popcorn-background",  // The id of our target DoM element
+         lat: 68.22,
+         lng: 125.7,
+         zoom: 2,
+        });
+
+        popcorn.image({
+         start: 76,
+         end: 86,
+         src: "http://upload.wikimedia.org/wikipedia/commons/0/09/Mars_from_Phoenix.jpg",
+         target: "popcorn-background",  // The id of our target DoM element
+       });
+
+        popcorn.image({
+         start: 86.1,
+         end: 105,
+         src: "http://img.readtiger.com/wkp/en/Pia09344.jpg",
+         target: "popcorn-background",  // The id of our target DoM element
+        });
+
       popcorn.play();
         }, false );
     </script>
